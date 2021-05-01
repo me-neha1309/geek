@@ -1,5 +1,5 @@
 <div>
-  <h1>Register</h1>
+  <h1>User Form</h1>
 
   <% if(typeof alert != 'undefined') { %> <% alert.forEach(function(error) { %>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -10,7 +10,7 @@
   </div>
   <% }) %> <% } %>
 
-  <form action="/register" method="POST">
+  <form action="/user" method="POST" >
     <div class="form-group">
       <label for="username" class="form-label">Username</label>
       <input type="text" class="form-control" name="username" id="username" />
@@ -20,13 +20,45 @@
       <input type="email" class="form-control" name="email" id="email" />
     </div>
     <div class="form-group">
+        <label for="stream" class="form-label">Stream</label>
+        <input type="text" class="form-control" name="stream" id="stream" />
+    </div>
+    <div class="form-group">
+        <label for="year" class="form-label">Year</label>
+        <input type="text" class="form-control" name="year" id="year" />
+    </div>
+    <div class="form-group">
+        <label for="instituteName" class="form-label">Institute Name</label>
+        <input type="text" class="form-control" name="instituteName" id="instituteName" />
+    </div>
+    <div class="form-group">
+        <label for="contact" class="form-label">Contact</label>
+        <input type="text" class="form-control" name="contact" id="contact" />
+    </div>
+    <div class="form-group">
       <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" name="password" id="password" />
     </div>
     <div class="form-group">
-      <label for="password1" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control" name="password1" id="password1" />
+        <label for="rcid" class="form-label">Rcid</label>
+        <input type="text" class="form-control" name="rcid" id="rcid" />
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-group">
+        <label for="events" class="form-label">Events</label>
+        <input type="text" class="form-control" name="events" id="events" />
+    </div>
+    <div class="form-group">
+        <label for="cuponApplied" class="form-label">Cupon Applied</label>
+        <input type="text" class="form-control" name="cuponApplied" id="cuponApplied" />
+    </div>
+    <div class="form-group">
+        <label for="cuponPhoto" class="form-label">Cupon Photo</label>
+        <input type="text" class="form-control" name="cuponPhoto" id="cuponPhoto" />
+    </div>
+    <div class="form-group">
+        <label for="otp" class="form-label">OTP</label>
+        <input type="text" class="form-control" name="otp" id="otp" />
+    </div>
+    <button type="submit" class="btn btn-danger">Submit</button>
   </form>
 </div>
